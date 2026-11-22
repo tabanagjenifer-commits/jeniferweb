@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Scoops — A Little Happiness In Every Scoop</title>
+  <meta name="description" content="Dream Scoops is a small-batch artisan ice cream brand serving pastel-perfect flavours in Philippine pesos. Strawberry, chocolate, vanilla, blueberry, mango and matcha — scooped fresh daily.">
+  <meta name="theme-color" content="#1B1029">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript>
+    <style>
+      .loader { display: none; }
+      [data-reveal] { opacity: 1; transform: none; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader__inner">
+      <img class="loader__logo" src="img/logo.png" alt="Dream Scoops logo" width="260" height="78">
+      <div class="loader__cone" aria-hidden="true">
+        <span class="scoop scoop--top"></span>
+        <span class="scoop scoop--mid"></span>
+        <span class="cone"></span>
+      </div>
+      <p class="loader__text">Scooping something sweet…</p>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="announce" id="announce">
+    <p class="announce__text">
+      <svg class="announce__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 2.6a4.2 4.2 0 0 1 3.5 6.4 4.4 4.4 0 0 1-1.4 6.1L12 21.4l-2.1-6.3a4.4 4.4 0 0 1-1.4-6.1A4.2 4.2 0 0 1 12 2.6Z" fill="currentColor"/>
+      </svg>
+      <span>A LITTLE HAPPINESS IN EVERY SCOOP!</span>
+      <svg class="announce__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 2.6a4.2 4.2 0 0 1 3.5 6.4 4.4 4.4 0 0 1-1.4 6.1L12 21.4l-2.1-6.3a4.4 4.4 0 0 1-1.4-6.1A4.2 4.2 0 0 1 12 2.6Z" fill="currentColor"/>
+      </svg>
+    </p>
+  </div>
+
+  <header class="nav-wrap" id="navWrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Dream Scoops — back to top">
+        <img class="brand__logo" src="img/logo.png" alt="Dream Scoops logo" width="260" height="78">
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#flavors" class="nav__link">Our Flavors</a></li>
+        <li><a href="#about" class="nav__link">About Us</a></li>
+        <li><a href="#testimonials" class="nav__link">Reviews</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="cart-btn" id="cartBtn" type="button" aria-haspopup="dialog" aria-controls="cartPanel">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="cart-btn__icon">
+            <path d="M4 7h16l-1.3 11.2a2 2 0 0 1-2 1.8H7.3a2 2 0 0 1-2-1.8L4 7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M8.6 7a3.4 3.4 0 0 1 6.8 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <span class="cart-btn__label">Scoop Bag</span>
+          <span class="cart-btn__count" id="cartCount" aria-hidden="true">0</span>
+          <span class="sr-only" id="cartCountRead">0 items in your cart</span>
+        </button>
+        <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="home">
+      <div class="hero__blob hero__blob--a" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--b" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">Small batch &nbsp;•&nbsp; Scooped fresh daily</p>
+          <h1 class="hero__title">Taste the<br><em>Dream</em> in every scoop.</h1>
+          <p class="hero__lead">Six pastel-perfect flavours, churned in tiny batches with real fruit, cream and a lot of care. Delivered frozen to your door anywhere in the Philippines.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#flavors">Explore Flavors</a>
+            <a class="btn btn--ghost" href="#about">Our Story</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>6</strong><span>Signature flavors</span></li>
+            <li><strong>100%</strong><span>Dairy cream base</span></li>
+            <li><strong>5k+</strong><span>Happy scoops</span></li>
+          </ul>
+        </div>
+        <div class="hero__media" data-reveal>
+          <img src="img/hero-icecream.jpg" alt="Three waffle cones of strawberry, blueberry and vanilla ice cream on a pastel pink and lavender surface" class="hero__img" width="1600" height="914" fetchpriority="high">
+          <div class="hero__badge">
+            <span class="hero__badge-price">from ₱139</span>
+            <span class="hero__badge-note">per single scoop</span>
+          </div>
+        </div>
+      </div>
+      <div class="divider divider--wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false"><path d="M0 90V44c120-26 240 22 360 22s240-48 360-48 240 48 360 48 240-30 360-38v42Z" fill="currentColor"/></svg>
+      </div>
+    </section>
+
+    <section class="section flavors" id="flavors">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Our Flavors</p>
+        <h2 class="section__title">Pick your happy place</h2>
+        <p class="section__sub">Every tub is 500&nbsp;ml and made to order. Prices are in Philippine pesos, inclusive of tax.</p>
+        <div class="divider divider--dots" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="grid" id="productGrid">
+
+        <article class="card" data-reveal data-id="strawberry" data-name="Strawberry Dream" data-img="img/strawberry-icecream.jpg" data-price="149"
+                 data-desc="Sun-ripened strawberries folded into a slow-churned cream base, with real berry ribbons in every spoonful. Bright, pink and gently tart.">
+          <div class="card__media">
+            <img src="img/strawberry-icecream.jpg" alt="Strawberry Dream ice cream in a waffle cone with a fresh strawberry" loading="lazy" width="900" height="900">
+            <button class="quickview" type="button" data-action="quickview" aria-label="Quick view Strawberry Dream">Quick View</button>
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Best seller</p>
+            <h3 class="card__name">Strawberry Dream</h3>
+            <p class="card__blurb">Real strawberries, slow-churned cream, berry ribbons.</p>
+            <div class="card__foot">
+              <p class="price">₱149</p>
+              <button class="btn btn--add" type="button" data-action="add" aria-label="Add Strawberry Dream to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-id="chocolate" data-name="Chocolate Cloud" data-img="img/chocolate-icecream.jpg" data-price="169"
+                 data-desc="Single-origin cocoa, dark chocolate curls and a whisper of sea salt. Deeply chocolatey without ever tipping bitter.">
+          <div class="card__media">
+            <img src="img/chocolate-icecream.jpg" alt="Chocolate Cloud ice cream in a waffle cone with chocolate curls" loading="lazy" width="900" height="900">
+            <button class="quickview" type="button" data-action="quickview" aria-label="Quick view Chocolate Cloud">Quick View</button>
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Rich &amp; dark</p>
+            <h3 class="card__name">Chocolate Cloud</h3>
+            <p class="card__blurb">Single-origin cocoa curls finished with sea salt.</p>
+            <div class="card__foot">
+              <p class="price">₱169</p>
+              <button class="btn btn--add" type="button" data-action="add" aria-label="Add Chocolate Cloud to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-id="vanilla" data-name="Vanilla Velvet" data-img="img/vanilla-icecream.jpg" data-price="139"
+                 data-desc="Madagascar vanilla beans split and steeped overnight in fresh cream. The quiet classic that everything else is measured against.">
+          <div class="card__media">
+            <img src="img/vanilla-icecream.jpg" alt="Vanilla Velvet ice cream in a waffle cone with visible vanilla specks" loading="lazy" width="900" height="900">
+            <button class="quickview" type="button" data-action="quickview" aria-label="Quick view Vanilla Velvet">Quick View</button>
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Classic</p>
+            <h3 class="card__name">Vanilla Velvet</h3>
+            <p class="card__blurb">Overnight-steeped Madagascar vanilla beans.</p>
+            <div class="card__foot">
+              <p class="price">₱139</p>
+              <button class="btn btn--add" type="button" data-action="add" aria-label="Add Vanilla Velvet to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-id="blueberry" data-name="Blueberry Bliss" data-img="img/blueberry-icecream.jpg" data-price="179"
+                 data-desc="Whole blueberries macerated in their own juice, swirled through a lavender-hued cream base. Cool, jammy and beautifully coloured.">
+          <div class="card__media">
+            <img src="img/blueberry-icecream.jpg" alt="Blueberry Bliss ice cream in a waffle cone with whole blueberries" loading="lazy" width="900" height="900">
+            <button class="quickview" type="button" data-action="quickview" aria-label="Quick view Blueberry Bliss">Quick View</button>
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Fruity</p>
+            <h3 class="card__name">Blueberry Bliss</h3>
+            <p class="card__blurb">Macerated whole berries in a lavender cream base.</p>
+            <div class="card__foot">
+              <p class="price">₱179</p>
+              <button class="btn btn--add" type="button" data-action="add" aria-label="Add Blueberry Bliss to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-id="mango" data-name="Mango Sunrise" data-img="img/mango-icecream.jpg" data-price="159"
+                 data-desc="Guimaras mango, ripe and golden, blended into a sorbet-soft cream. Topped with fresh mango dice before the lid goes on.">
+          <div class="card__media">
+            <img src="img/mango-icecream.jpg" alt="Mango Sunrise ice cream in a waffle cone topped with diced mango" loading="lazy" width="900" height="900">
+            <button class="quickview" type="button" data-action="quickview" aria-label="Quick view Mango Sunrise">Quick View</button>
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Local fruit</p>
+            <h3 class="card__name">Mango Sunrise</h3>
+            <p class="card__blurb">Guimaras mango, ripe and diced into every tub.</p>
+            <div class="card__foot">
+              <p class="price">₱159</p>
+              <button class="btn btn--add" type="button" data-action="add" aria-label="Add Mango Sunrise to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-id="matcha" data-name="Matcha Magic" data-img="img/matcha-icecream.jpg" data-price="189"
+                 data-desc="Ceremonial-grade Uji matcha whisked into a lightly sweetened cream. Grassy, creamy and grown-up — our chef's own favourite.">
+          <div class="card__media">
+            <img src="img/matcha-icecream.jpg" alt="Matcha Magic ice cream in a waffle cone dusted with matcha powder" loading="lazy" width="900" height="900">
+            <button class="quickview" type="button" data-action="quickview" aria-label="Quick view Matcha Magic">Quick View</button>
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Chef's pick</p>
+            <h3 class="card__name">Matcha Magic</h3>
+            <p class="card__blurb">Ceremonial-grade Uji matcha, whisked by hand.</p>
+            <div class="card__foot">
+              <p class="price">₱189</p>
+              <button class="btn btn--add" type="button" data-action="add" aria-label="Add Matcha Magic to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section signature" id="signature">
+      <div class="signature__inner">
+        <div class="signature__media" data-reveal>
+          <img src="img/sundae.jpg" alt="Dream Sundae Supreme in a tall glass with strawberry and blueberry scoops, whipped cream and sprinkles" loading="lazy" width="900" height="900">
+        </div>
+        <div class="signature__copy" data-reveal>
+          <p class="eyebrow eyebrow--light">Signature build</p>
+          <h2 class="section__title section__title--light">Dream Sundae Supreme</h2>
+          <p>Two scoops of your choosing, hot chocolate sauce, whipped cream, rainbow sprinkles, a fresh strawberry and a heart wafer. Built for sharing — or not.</p>
+          <ul class="signature__list">
+            <li>Any two flavours</li>
+            <li>Warm cocoa drizzle</li>
+            <li>Served in a chilled glass</li>
+          </ul>
+          <div class="signature__foot">
+            <p class="price price--light">₱249</p>
+            <div class="signature__actions">
+              <button class="btn btn--light" type="button" id="sundaeAdd">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about__inner">
+        <div class="about__media" data-reveal>
+          <img src="img/about-icecream.jpg" alt="A Dream Scoops server in a lavender apron scooping ice cream behind the pastel counter of the parlor" loading="lazy" width="1200" height="960">
+          <div class="about__stamp" aria-hidden="true">
+            <span>est.</span><strong>2026</strong>
+          </div>
+        </div>
+        <div class="about__copy" data-reveal>
+          <p class="eyebrow">About Us</p>
+          <h2 class="section__title">A tiny parlor with a big obsession</h2>
+          <p>Dream Scoops began in a home kitchen with one secondhand churner and a stubborn belief that ice cream should taste like the fruit it came from.</p>
+          <p>Today we still make every batch by hand, in quantities small enough to check each tub before it leaves the counter. No powders, no shortcuts, nothing that sits frozen for a month.</p>
+          <ul class="about__points">
+            <li><span class="dot" aria-hidden="true"></span> Churned in batches of 12 litres or fewer</li>
+            <li><span class="dot" aria-hidden="true"></span> Fruit sourced from Guimaras and Benguet growers</li>
+            <li><span class="dot" aria-hidden="true"></span> Compostable cups, spoons and cones</li>
+          </ul>
+          <a class="btn btn--primary" href="#contact">Visit the parlor</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Reviews</p>
+        <h2 class="section__title">Straight from the spoon</h2>
+        <div class="divider divider--dots divider--dots-light" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+      <div class="quotes">
+        <figure class="quote" data-reveal>
+          <div class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote>The mango one tastes like actual mango, not candy. My kids ask for it three times a week now.</blockquote>
+          <figcaption><span class="quote__name">Andrea M.</span><span class="quote__meta">Quezon City</span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal>
+          <div class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote>Ordered the sampler for a birthday. It arrived fully frozen, and the packaging was too pretty to throw away.</blockquote>
+          <figcaption><span class="quote__name">Kris D.</span><span class="quote__meta">Makati</span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal>
+          <div class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote>Matcha Magic is the real thing — grassy, not sweet. Best scoop I have had in the Philippines, full stop.</blockquote>
+          <figcaption><span class="quote__name">Jaye R.</span><span class="quote__meta">Cebu City</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact__inner">
+        <div class="contact__info" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Come say hi</h2>
+          <p>Questions about an order, a party tub or a wholesale list? Reach out and we will get back to you the same day.</p>
+          <dl class="contact__list">
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+639987656765">09987656765</a></dd>
+            </div>
+            <div>
+              <dt>Social</dt>
+              <dd><a href="#contact">@jenifer</a></dd>
+            </div>
+            <div>
+              <dt>Parlor hours</dt>
+              <dd>Tuesday to Sunday, 11:00 AM – 9:00 PM</dd>
+            </div>
+          </dl>
+        </div>
+        <form class="form" id="contactForm" novalidate data-reveal>
+          <h3 class="form__title">Send us a note</h3>
+          <div class="field">
+            <label for="cName">Name</label>
+            <input id="cName" name="name" type="text" autocomplete="name" required>
+            <p class="field__error" id="cNameErr" role="alert" hidden>Please tell us your name.</p>
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input id="cEmail" name="email" type="email" autocomplete="email" required>
+            <p class="field__error" id="cEmailErr" role="alert" hidden>Please enter a valid email address.</p>
+          </div>
+          <div class="field">
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" name="message" rows="4" required></textarea>
+            <p class="field__error" id="cMsgErr" role="alert" hidden>Please write a short message.</p>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">Send message</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logoChip">
+          <img class="footer__logo" src="img/logo.png" alt="Dream Scoops logo" width="360" height="107" loading="lazy">
+        </div>
+        <p class="footer__desc">Small-batch artisan ice cream, churned by hand in the Philippines. A little happiness in every scoop.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer navigation">
+        <h3 class="footer__heading">Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#flavors">Our Flavors</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Say hello</h3>
+        <ul>
+          <li><a href="tel:+639987656765">09987656765</a></li>
+          <li>@jenifer</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Find us</h3>
+        <ul>
+          <li>Tuesday – Sunday</li>
+          <li>11:00 AM – 9:00 PM</li>
+          <li><a href="#flavors">Order the flavors</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 DREAM SCOOPS. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" tabindex="-1" aria-hidden="true"></div>
+
+  <aside class="cart" id="cartPanel" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <header class="cart__head">
+      <h2 class="cart__title" id="cartTitle">Your Scoop Bag</h2>
+      <button class="icon-btn" type="button" data-close="cart" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+      </button>
+    </header>
+    <div class="cart__body" id="cartBody"></div>
+    <footer class="cart__foot" id="cartFoot" hidden>
+      <div class="cart__row"><span>Subtotal</span><strong id="cartSubtotal">₱0</strong></div>
+      <div class="cart__row cart__row--muted"><span>Delivery</span><strong>Calculated at checkout</strong></div>
+      <button class="btn btn--primary btn--block" type="button" id="checkoutBtn">Checkout</button>
+      <button class="btn btn--text" type="button" id="clearCartBtn">Empty the bag</button>
+      <p class="cart__status" id="cartStatus" role="status" aria-live="polite"></p>
+    </footer>
+  </aside>
+
+  <div class="modal" id="quickView" role="dialog" aria-modal="true" aria-labelledby="qvName" aria-hidden="true">
+    <div class="modal__panel">
+      <button class="icon-btn modal__close" type="button" data-close="quickview" aria-label="Close quick view">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal__media">
+        <img id="qvImg" src="img/strawberry-icecream.jpg" alt="" width="900" height="900" loading="lazy">
+      </div>
+      <div class="modal__body">
+        <p class="eyebrow" id="qvTag">Our Flavor</p>
+        <h2 class="modal__title" id="qvName">Strawberry Dream</h2>
+        <p class="modal__desc" id="qvDesc"></p>
+        <p class="modal__price" id="qvPrice">₱149</p>
+        <div class="modal__buy">
+          <div class="qty" role="group" aria-label="Quantity">
+            <button type="button" data-action="qv-minus" aria-label="Decrease quantity">−</button>
+            <input id="qvQty" type="number" min="1" max="20" value="1" aria-label="Quantity" inputmode="numeric">
+            <button type="button" data-action="qv-plus" aria-label="Increase quantity">+</button>
+          </div>
+          <button class="btn btn--primary" type="button" id="qvAdd">Add to Cart</button>
+        </div>
+        <button class="btn btn--text" type="button" data-close="quickview">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V6M6 12l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
